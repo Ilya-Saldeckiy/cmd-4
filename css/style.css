@@ -203,6 +203,7 @@ li{
 }
 
 .fixed-active .menu-list-item a:hover{
+    color: #777;
     border-bottom: 1px solid #777;
 }
 
@@ -226,11 +227,11 @@ li{
 }
 
 .menu-list-item{
-    transition: border-bottom .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .menu-list-item a:hover{
-    border-bottom: 1px solid #cef4ff;
+    color: #ffffff;
 }
 
 /* .phone-link a:hover{
@@ -654,7 +655,7 @@ li{
     background-image: url("../img/minus.svg");
     background-repeat: no-repeat;
     background-position: 55% 45%;
-    background-size: 19px;
+    background-size: 23px;
 }
 
 .last-accord {
@@ -2235,6 +2236,15 @@ li{
 
     .img-radius {
         border-radius: 0 0 36px 0;
+    }
+
+    .ui-icon{
+        background-size: 15px;
+        top: 45px;
+    }
+    
+    .ui-state-active .ui-icon{
+        background-size: 15px;
     }
 }
 
