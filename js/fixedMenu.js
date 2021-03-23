@@ -69,7 +69,7 @@ if($(window).width()> 1400){
 	}
 } else
 
-if($(window).width()> 759){
+if($(window).width()> 767){
 	var scrolled;
 	window.onscroll = function() {
 		scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -79,10 +79,10 @@ if($(window).width()> 759){
 		if(600 > scrolled){
 			$(".header-section-fixed").removeClass("fixed-active")
 		}
-		if(scrolled >11200){
+		if(scrolled >12800){
 			$(".header-section-fixed").addClass("fixed-close")
 		}
-		if(scrolled < 11200){
+		if(scrolled < 12800){
 			$(".header-section-fixed").removeClass("fixed-close")
 		}
 	}
@@ -97,10 +97,29 @@ if($(window).width()> 400){
 		if(600 > scrolled){
 			$(".header-section-fixed").removeClass("fixed-active")
 		}
-		if(scrolled > 10620){
+		if(scrolled > 9500){
 			$(".header-section-fixed").addClass("fixed-close")
 		}
-		if(scrolled < 10620){
+		if(scrolled < 9500){
+			$(".header-section-fixed").removeClass("fixed-close")
+		}
+	}
+}
+else
+if($(window).width()> 330){
+	var scrolled;
+	window.onscroll = function() {
+		scrolled = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrolled > 550){
+			$(".header-section-fixed").addClass("fixed-active")
+		}
+		if(550 > scrolled){
+			$(".header-section-fixed").removeClass("fixed-active")
+		}
+		if(scrolled > 13200){
+			$(".header-section-fixed").addClass("fixed-close")
+		}
+		if(scrolled < 13200){
 			$(".header-section-fixed").removeClass("fixed-close")
 		}
 	}
@@ -116,10 +135,10 @@ if($(window).width()> 319){
 		if(550 > scrolled){
 			$(".header-section-fixed").removeClass("fixed-active")
 		}
-		if(scrolled > 13500){
+		if(scrolled > 14100){
 			$(".header-section-fixed").addClass("fixed-close")
 		}
-		if(scrolled < 13500){
+		if(scrolled < 14100){
 			$(".header-section-fixed").removeClass("fixed-close")
 		}
 	}
