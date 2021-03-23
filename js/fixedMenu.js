@@ -30,7 +30,24 @@ if( $(window).width() > 2840){
         }
     }
 } else
-
+if($(window).width()> 1900){
+	var scrolled;
+	window.onscroll = function() {
+		scrolled = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrolled > 700){
+			$(".header-section-fixed").addClass("fixed-active")
+		}
+		if(700 > scrolled){
+			$(".header-section-fixed").removeClass("fixed-active")
+		}
+		if(scrolled > 9200){
+			$(".header-section-fixed").addClass("fixed-close")
+		}
+		if(scrolled < 9200){
+			$(".header-section-fixed").removeClass("fixed-close")
+		}
+	}
+} else
 if( $(window).width() > 1600){
     var scrolled;
     window.onscroll = function() {
@@ -49,7 +66,6 @@ if( $(window).width() > 1600){
         }
     }
 } else
-
 if($(window).width()> 1400){
 	var scrolled;
 	window.onscroll = function() {
@@ -68,7 +84,6 @@ if($(window).width()> 1400){
 		}
 	}
 } else
-
 if($(window).width()> 767){
 	var scrolled;
 	window.onscroll = function() {
