@@ -12,3 +12,11 @@ $(document).on('click', '.video__preview', function() {
  
 	$video.attr('src', src + '&autoplay=1');
 });
+
+document.querySelectorAll('.question-link').forEach(function(cart){
+    cart.addEventListener('click', function(event){
+        document.querySelectorAll('.last-accord-line').forEach(function(tabContent) {
+            tabContent.classList.toggle('close-border')
+        })
+    })
+})

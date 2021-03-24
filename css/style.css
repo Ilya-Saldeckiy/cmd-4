@@ -597,6 +597,14 @@ li{
     border-bottom: 1px solid#eeeeee;
 }
 
+.close-border{
+    transition: border-bottom .3s ease-in-out;
+}
+
+.close-border:last-of-type{
+    border-bottom: 0px;
+}
+
 .ui-accordion-content-active + .last-accord-line:last-of-type{
     border: none;
 }
